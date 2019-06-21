@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   displayPromptButton.addEventListener("click", function() {
     let input = prompt("What is your favorite Pokemon?");
-    addListItem(input, view);
+
+    if (input == null || input == "") {
+      alert("You didn't input a Pokemon!");
+    } else {
+      addListItem(input, view);
+    }
   });
 });
