@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (input == "") {
       alert("You didn't input a Pokemon!");
-      //} else if  {
+    }
+    //This following if statement "activates" cancel button in prompt!
+    if (input === null || input === false) {
     } else {
       addListItem(input, view);
     }
