@@ -28,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
   displayPromptButton.addEventListener("click", function() {
     let input = prompt("What is your favorite Pokemon?");
 
-    if (input == null || input == "") {
+    if (input == "") {
       alert("You didn't input a Pokemon!");
+      //} else if  {
     } else {
       addListItem(input, view);
     }
